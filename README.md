@@ -2,9 +2,7 @@
 
 Projeto para a disciplina de Projetos e Atividades de Extensão do curso de Engenharia de Computação da Universidade Católica de Petrópolis.
 
-<div style="text-align: center; margin-top: 30px;">
-    <img src="src/main/resources/static/logo-ucp.png" alt="Logo UCP" />
-</div>
+![Logo UCP](src/main/resources/static/logo-ucp.png)
 
 ## Descrição do Projeto
 
