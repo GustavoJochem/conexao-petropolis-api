@@ -12,7 +12,7 @@ O **Conexão Petrópolis** é uma plataforma digital que visa dar visibilidade a
 
 - **Java**: Linguagem de programação principal.
 - **Spring Boot**: Framework para construção de aplicações web.
-- **LocalStack**: Simular a AWS localmente.
+- **LocalStack**: Ferramenta de desenvolvimento que simula serviços da AWS localmente, permitindo que desenvolvedores testem e desenvolvam aplicações em um ambiente que replica a nuvem.
 - **AWS**:
   - **Amazon S3**: Armazenamento de imagens dos eventos.
   - **Amazon RDS**: Banco de dados relacional (PostgreSQL).
@@ -33,7 +33,7 @@ O **Conexão Petrópolis** é uma plataforma digital que visa dar visibilidade a
 |     Usuário/Cliente     |
 +-------------------------+
            |
-           | (Requests HTTP)
+           | (Requisições HTTP)
            v
 +-------------------------+
 |     Aplicação Spring    |
