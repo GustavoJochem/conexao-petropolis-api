@@ -76,7 +76,7 @@ O **Conexão Petrópolis** é uma plataforma digital que visa dar visibilidade a
 +-------------------------+
 ```
 
-### Descrição dos Componentes
+## Descrição dos Componentes
 
 - **Usuário/Cliente**: Interage com a aplicação através de chamadas HTTP (REST API).
 - **Controller**: Recebe requisições HTTP e chama os serviços apropriados.
@@ -86,6 +86,10 @@ O **Conexão Petrópolis** é uma plataforma digital que visa dar visibilidade a
 - **Amazon RDS**: Banco de dados relacional para armazenar informações.
 - **Amazon S3**: Armazena imagens de eventos.
 - **Amazon CloudWatch**: Monitora a aplicação, coletando logs e métricas.
+
+## Modelagem de dados
+
+![Modelagem de dados](diagrama.png)
 
 ## Pré-requisitos
 
