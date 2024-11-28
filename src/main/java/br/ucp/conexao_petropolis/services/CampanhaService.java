@@ -21,15 +21,8 @@ public class CampanhaService {
 
 	public Campanha salvar(Campanha campanha, String idUsuario) throws UsuarioNaoEncontradoException {
 
-		campanha = null;
-
-		campanha.getId();
-
-
 		Usuario usuario = usuarioRepository.findById(Long.valueOf(idUsuario))
 				.orElseThrow(() -> new UsuarioNaoEncontradoException("Usuário com ID " + idUsuario + " não encontrado."));
-
-
 
 		campanha.setUsuario(usuario);
 		campanha.setDataCriacao(LocalDateTime.now());
