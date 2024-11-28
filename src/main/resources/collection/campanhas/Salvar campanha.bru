@@ -1,0 +1,42 @@
+meta {
+  name: Salvar campanha
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/conexao-petropolis/api/campanhas
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "Natal solidário UCP",
+    "descricao": "Uma campanha para arrecadar brinquedos para crianças carentes durante o Natal.",
+    "tipo": "CRIANCAS",
+    "idUsuario": "11",
+    "contato": {
+      "email": "exemplo@dominio.com",
+      "telefone": "+5511999999999",
+      "site": "https://www.exemplo.com",
+      "facebook": "https://www.facebook.com/exemplo",
+      "instagram": "https://www.instagram.com/exemplo",
+      "twitter": "https://www.twitter.com/exemplo",
+      "linkedin": "https://www.linkedin.com/in/exemplo",
+      "youtube": "https://www.youtube.com/exemplo"
+    },
+    "endereco": {
+      "logradouro": "R. Barão do Amazonas",
+      "numero": "124",
+      "bairro": "Centro",
+      "cidade": "Petrópolis",
+      "estado": "RJ",
+      "cep": "25685-100"
+    },
+    "status": "PENDENTE",
+    "aceitaDoacoes": true,
+    "aceitaVoluntarios": false,
+    "urlImagem": "https://exemplo.com/imagem.jpg"
+  }
+}

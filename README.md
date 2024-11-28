@@ -12,11 +12,10 @@ O **Conexão Petrópolis** é uma plataforma digital que visa dar visibilidade a
 
 - **Java**: Linguagem de programação principal.
 - **Spring Boot**: Framework para construção de aplicações web.
+- **Postgres**: Banco de dados.
 - **LocalStack**: Ferramenta de desenvolvimento que simula serviços da AWS localmente, permitindo que desenvolvedores testem e desenvolvam aplicações em um ambiente que replica a nuvem.
 - **AWS**:
   - **Amazon S3**: Armazenamento de imagens dos eventos.
-  - **Amazon RDS**: Banco de dados relacional (PostgreSQL).
-  - **Amazon CloudWatch**: Monitoramento e logging da aplicação.
 
 ## Estrutura do Projeto
 
@@ -51,14 +50,13 @@ O **Conexão Petrópolis** é uma plataforma digital que visa dar visibilidade a
 |  +-------------------+  |
 |  |   AWS S3 Client   |  |
 |  +-------------------+  |
-|  |   AWS RDS Client  |  |
-|  +-------------------+  |
+|                         |
 +-------------------------+
            |
            | (JPA)
            v
 +-------------------------+
-|      Amazon RDS         |
+|                         |
 |     PostgreSQL DB       |
 +-------------------------+
            |
@@ -68,12 +66,6 @@ O **Conexão Petrópolis** é uma plataforma digital que visa dar visibilidade a
 |        Amazon S3        |
 |        (Imagens)        |
 +-------------------------+
-           |
-           | (Metricas & Logs)
-           v
-+-------------------------+
-|     Amazon CloudWatch   |
-+-------------------------+
 ```
 
 ## Descrição dos Componentes
@@ -82,14 +74,13 @@ O **Conexão Petrópolis** é uma plataforma digital que visa dar visibilidade a
 - **Controller**: Recebe requisições HTTP e chama os serviços apropriados.
 - **Service**: Realiza operações como cadastro de eventos e manipulação de imagens.
 - **Repository (JPA)**: Facilita a interação com o banco de dados PostgreSQL.
-- **AWS Clients**: Utilizados para interagir com S3 e RDS, gerenciando o armazenamento de imagens e informações dos eventos.
-- **Amazon RDS**: Banco de dados relacional para armazenar informações.
+- **AWS Clients**: Utilizados para interagir com S3, gerenciando o armazenamento de imagens.
 - **Amazon S3**: Armazena imagens de eventos.
 - **Amazon CloudWatch**: Monitora a aplicação, coletando logs e métricas.
 
 ## Modelagem de dados
 
-![Modelagem de dados](diagrama.png)
+//TODO
 
 ## Pré-requisitos
 
